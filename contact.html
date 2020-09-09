@@ -1,0 +1,265 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+      Contact
+    </title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+    
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif; margin:0; overflow: auto;}
+    img {vertical-align: middle;}
+
+    li, a, button {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #edf0f1;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+    }
+
+    .body {
+      background: linear-gradient(147deg, #000000 0%, #434343 74%) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .logo { 
+      font-size: 30px; 
+      font-weight: bold;
+    }
+
+    .h1 { 
+      background-color: #FFFFFF;
+      font-family: 'Times New Roman', sans-serif;
+      line-height: 1.25; 
+      margin: 0 0 10px; 
+      font-size: 40px; 
+      font-weight: bold;
+      color: black; 
+    }
+
+    .p{
+      background-color: #FFFFFF; 
+      text-align: justify; 
+      font-family: "Helvetica Neue",Arial,sans-serif; 
+      font-size: 16px; 
+      font-weight: 300; 
+      line-height: 1.5; 
+      margin-bottom: 15px; 
+    }
+
+    .vision {
+      font-family: "Times New Roman",sans-serif;
+      text-align: center;
+      position: relative;
+      width: 50%;
+      background-color: #FFFFFF;
+      width: 1000px;
+      margin: 7em auto;
+      border-radius: 1.5em;
+      padding: 30px;
+      box-shadow: 0px 11px 35px 2px green;
+    }
+
+    .vision:hover {
+      border: 1px red;
+      box-shadow: 0px 11px 35px 2px red;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 5;
+      width: 100%;
+      color: white;
+      text-align: center;
+      background-color: black;
+    }
+
+    .logo {
+      font-family: "Times New Roman",sans-serif;
+      color: #4F69C0;
+      cursor: pointer;
+    }
+
+    .nav__links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav__links a {
+      transition: all 0.4s ease 0s;      
+      font-size: 16px;
+    }
+
+    .nav__links a:hover{
+      color: black;
+      background-color: rgba(255, 255, 255, 1);
+      padding: 10px;
+      box-shadow: 0px 11px 35px 2px red;
+    }
+
+    .blur {
+      box-shadow: rgba(0, 0, 0, 1);
+      align-content: center;
+      align-items: center;
+    }
+
+    ::-webkit-scrollbar {
+      background: red;
+      height: 4px;
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:horizontal{
+      position:absolute;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: black; 
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: red; 
+    }
+
+    .topnav {
+      column-width: 100%;
+    }
+
+    .topnav a {
+      float: right;
+      display: flex;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+
+    .dropdown .dropbtn {
+      font-size: 17px;    
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: flex;
+      text-align: left;
+    }
+
+    .dropbtn {
+      background-color: #555;
+      color: white;
+    }
+
+    .dropdown-content{
+      background-color: #ddd;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      color: black;
+      background-color: rgba(255, 255, 255, 1);
+      padding: 10px;
+      box-shadow: 0px 11px 35px 2px red;
+      display: flex;
+    }
+
+  </style>
+  <body class="body">
+    <header>
+     <a href="index.html"><img src="images/sss.png" style="width:60%;"></a>
+     <div class="topnav nav__links" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Products<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+      <a href="#about">Login</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    </header>
+    <div class="vision">
+      <table width="100%" border="0">
+        <tr>
+          <td width="46%"><div align="center">
+            <p><strong><u>Office Address:</u></strong></p>
+            <p><strong><br>
+            <span>SHINE SOFTWARE SOLUTIONS</span><span>&nbsp;</span></strong><br>
+              Door.No.3-9-76, Opp.Parameswara Provisional Stores,<br>
+              Sri Mallikarjuna Swamy Devastanam Road,&nbsp;<br>
+              Sharada Nagar, Ramanthapur,<br>
+              <strong>HYDERABAD-500013.</strong><br>
+              <strong>Contact No: 040 65554240,7207828656&nbsp;</strong><br>
+              Email:contact@shinesoftwaresolutions.in<br>
+              Web Site: www.shinesoftwaresolutions.in</p>
+            </div></td>
+          <td width="54%">
+            <a href="http://kanishkkunal.in" target="popup" onclick="window.open('https://www.google.com/maps/place/Shine+Software+Solutions/@17.3939322,78.5303609,15z/data=!4m5!3m4!1s0x3bcb991093dc520d:0x13a370bdc1f7a148!8m2!3d17.3970598!4d78.5358147','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"><img src="images/location.png" style="width:100%;"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <footer class="footer">
+      &copy; Copyright 2008 SSS
+    </footer>
+  </body>
+  <script>
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</html>
